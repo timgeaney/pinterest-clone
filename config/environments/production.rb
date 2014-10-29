@@ -77,4 +77,7 @@ PinterestClone::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  #set this to hostnamme
+  config.action_mailer.default_url_options = { host: 'tg-pinterest.herokuapp.com'}
 end
